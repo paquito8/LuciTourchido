@@ -1,0 +1,60 @@
+drop database lucitour;
+create database lucitour;
+
+use lucitour;
+
+CREATE TABLE usuario (
+    Id_usuario INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(255) NOT NULL,
+    Edad INT(2) NOT NULL,
+    Correo VARCHAR(255) NOT NULL,
+    Contrasena Varchar(30) not null
+);
+
+
+insert into usuario values (null,'admin', 20, 'admin@gmail.com', 'admin');
+
+CREATE TABLE lugar (
+    id_lugar INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(255) NOT NULL,
+    descripcion TEXT,
+    direccion VARCHAR(255) NOT NULL,
+    horario VARCHAR(30) NOT NULL,
+    temporada VARCHAR(255) NOT NULL,
+    costo INT NOT NULL,
+    categoria VARCHAR(50) NOT NULL,
+    imagen_lugar BLOB
+);
+
+VALUES ('Lugar de ejemplo', 'Esta es una descripción de ejemplo', 'Dirección de ejemplo', 'Horario de ejemplo', 'Temporada de ejemplo', 10, 'Arqueologica', LOAD_FILE('./img/arqueologica.png'));
+
+CREATE TABLE reservacion (
+    Id_reservacion INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(255) NOT NULL,
+    horario VARCHAR(255) NOT NULL,
+    no_personas INT NOT NULL,
+    costo VARCHAR(255) NOT NULL,
+    temporada VARCHAR(255),
+    tipo VARCHAR(255),
+    fecha_Inicio DATE NOT NULL,
+    id_lugar INT NOT NULL,
+    FOREIGN KEY (id_lugar) REFERENCES Lugar(id_lugar)
+);
+
+CREATE TABLE Actividad (
+    Id_Actividad INT PRIMARY KEY AUTO_INCREMENT,
+    Nombre_Actividad VARCHAR(255) NOT NULL ,
+    Costo INT NOT NULL ,
+    Horario VARCHAR(255) NOT NULL ,
+    Numero_Personas INT NOT NULL ,
+    Edad_Recomendada INT NOT NULL ,
+    Id_Lugar INT NOT NULL,
+    FOREIGN KEY (Id_Lugar) REFERENCES Lugar(Id_Lugar)
+);
+
+CREATE TABLE Categoria (
+    Id_Categoria INT PRIMARY KEY AUTO_INCREMENT,
+    Nombre VARCHAR(255) NOT NULL,
+    Id_Lugar INT NOT NULL,
+    FOREIGN KEY (Id_Lugar) REFERENCES Lugar(Id_Lugar)
+);

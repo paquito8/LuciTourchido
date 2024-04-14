@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8f8; /* Color de fondo verde agua */
+  }
+  
+  header {
+    text-align: center;
+    color: #ffffff; /* Letras blancas */
+    background-color: #2ecc71; /* Fondo verde agua para el título */
+    padding: 20px;
+  }
+  
+  main {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #2ecc71;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #27ae60;
+  }
+
+  
+
+
+
+
+
+
+
+
+  
+/* Estilos adicionales para la vista menu.php */
+/* Estilos para la página de inicio de sesión */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8f8; /* Color de fondo verde agua */
+  }
+  
+  header {
+    text-align: center;
+    color: #ffffff; /* Letras blancas */
+    background-color: #2ecc71; /* Fondo verde agua para el título */
+    padding: 20px;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  .opciones {
+    background-color: slategray;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+  }
+  
+  .opcion {
+    text-align: center;
+  }
+  
+  .icono {
+    width: 64px; /* Ajusta el tamaño del icono según sea necesario */
+    height: 64px;
+    margin-bottom: 5px; /* Espacio entre el icono y el texto */
+  }
+  
+
+  /* Estilo para el enlace del título */
+.titulo-enlace {
+    text-decoration: none;
+    color: #ffffff; /* Color del texto */
+  }
+  
