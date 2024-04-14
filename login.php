@@ -19,14 +19,19 @@
     <h1><img src="./img/logo.png" alt="Logo"> LuciTour</h1>
   </header>
   <main>
-    <form action="menu.php" method="post">
-      <label for="usuario">Usuario:</label>
-      <input type="text" id="usuario" name="usuario" required>
+    <form action="validar_login.php" method="post">
+      <label for="Correo">Correo:</label>
+      <input type="text" id="corre" name="correo" required>
       <label for="contrasena">Contraseña:</label>
       <input type="password" id="contrasena" name="contrasena" required>
       <button type="submit">Ingresar</button>
     </form>
+    <?php
+    // Verificar si hay un error de inicio de sesión
+    if (isset($_GET["error"]) && $_GET["error"] == 1) {
+      echo "<p class='error'>Usuario o contraseña incorrectos.</p>";
+    }
+    ?>
   </main>
 </body>
 </html>
-    
