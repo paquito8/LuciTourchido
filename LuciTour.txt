@@ -23,10 +23,10 @@ CREATE TABLE lugar (
     temporada VARCHAR(255) NOT NULL,
     costo INT NOT NULL,
     categoria VARCHAR(50) NOT NULL,
-    imagen_lugar BLOB
+    imagen_lugar varchar(100) not null
 );
 
-VALUES ('Lugar de ejemplo', 'Esta es una descripción de ejemplo', 'Dirección de ejemplo', 'Horario de ejemplo', 'Temporada de ejemplo', 10, 'Arqueologica', LOAD_FILE('./img/arqueologica.png'));
+VALUES ('Lugar de ejemplo', 'Esta es una descripción de ejemplo', 'Dirección de ejemplo', 'Horario de ejemplo', 'Temporada de ejemplo', 10, 'Arqueologica','zona_arqueologica.png');
 
 hasta ahorita solo uso las tablas de arriba padre
 
