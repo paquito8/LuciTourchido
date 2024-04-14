@@ -28,6 +28,9 @@ CREATE TABLE lugar (
 
 VALUES ('Lugar de ejemplo', 'Esta es una descripción de ejemplo', 'Dirección de ejemplo', 'Horario de ejemplo', 'Temporada de ejemplo', 10, 'Arqueologica', LOAD_FILE('./img/arqueologica.png'));
 
+hasta ahorita solo uso las tablas de arriba padre
+
+
 CREATE TABLE reservacion (
     Id_reservacion INT PRIMARY KEY AUTO_INCREMENT,
     nombre VARCHAR(255) NOT NULL,
