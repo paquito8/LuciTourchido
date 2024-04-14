@@ -108,3 +108,10 @@ body {
     color: #ffffff; /* Color del texto */
   }
   
+
+
+
+  .imagen-pequena {
+    max-width: 200px;
+    margin: 0 auto;
+}
