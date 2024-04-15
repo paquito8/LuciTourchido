@@ -75,10 +75,10 @@
         </a>
       </div>
       <div class="opcion">
-        <a href="cerrar_sesion.php">
+        <a href="login.php">
           <img src="./img/boton.png" alt="Cerrar Sesión" class="icono2">
         </a>
-        <a href="cerrar_sesion.php">
+        <a href="login.php">
           <span class="btn btn-transparente" >Salir</span>
         </a>
       </div>

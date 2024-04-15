@@ -5,7 +5,9 @@
         <input type="text" id="nombre" placeholder="Las Vigas Tlaxcala" required>
         <button type="button" onclick="actualizarMapa()">Actualizar Mapa</button>
     </form>
-    <div id="mapa"></div>
+    <div id="mapa">
+        
+    </div>
 
     <!-- Aquí colocamos el script al final del cuerpo para asegurar que el DOM esté completamente cargado -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
