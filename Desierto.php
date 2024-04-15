@@ -19,17 +19,20 @@
         }
 
         // Consulta SQL para obtener los destinos del bosque
-        $sql = "SELECT * FROM lugar WHERE categoria = 'arqueologica'";
+        $sql = "SELECT * FROM lugar WHERE categoria = 'desierto'";
         $result = $conn->query($sql);
 
         // Si hay resultados
         if ($result->num_rows > 0) {
           // Iterar sobre cada fila de resultados
           while($row = $result->fetch_assoc()) {
+            $nombre_imagen = $row['imagen_lugar'];
+            $ruta_imagen = "" . $nombre_imagen;
+
             echo '<div class="col-md-4">';
             echo '<div class="card">';
             // Mostrar la imagen
-            echo '<img src="data:image/jpeg;base64,' . base64_encode($row["imagen_lugar"]) . '" class="card-img-top" alt="' . $row["nombre"] . '">';
+            echo '<img src="' . $ruta_imagen . '" class="img-fluid" style="max-width: 200px; margin: 0 auto;">';
             echo '<div class="card-body">';
             echo '<h5 class="card-title">' . $row["nombre"] . '</h5>';
             echo '<p class="card-text">' . $row["descripcion"] . '</p>';
