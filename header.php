@@ -65,7 +65,7 @@
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
             <!-- Aquí puedes incluir los datos del usuario -->
             <a class="dropdown-item" href="VerPerfil.php"><img src="./img/Logo.png" alt="" width="50px">Perfil</a>
-            <a class="dropdown-item" href="#"><img src="./img/herramientas.png" alt="" width="65px">Configuración</a>
+            <a class="dropdown-item" href="mis_reservaciones.php"><img src="./img/herramientas.png" alt="" width="65px">Mis reservaciones</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="login.php">Cerrar sesión</a>
           </div>
