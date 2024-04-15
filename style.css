@@ -53,15 +53,6 @@ body {
   }
 
   
-
-
-
-
-
-
-
-
-  
 /* Estilos adicionales para la vista menu.php */
 /* Estilos para la página de inicio de sesión */
 body {
@@ -77,6 +68,13 @@ body {
     background-color: #2ecc71; /* Fondo verde agua para el título */
     padding: 20px;
   }
+
+  .titulos {
+    text-align: center;
+    color: #ffffff; /* Letras blancas */
+    background-color: #2ecc71; /* Fondo verde agua para el título */
+    padding: 20px;
+  }
   
   main {
     max-width: 800px;
@@ -85,20 +83,32 @@ body {
   }
   
   .opciones {
-    background-color: slategray;
+    border-radius: 10px;
+    background-color: rgb(58,50, 54);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 20px;
+    padding: 25px;
   }
   
   .opcion {
     text-align: center;
+    display: flex;
+    flex-direction: column; /* Los elementos hijos se apilan verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
   }
   
   .icono {
-    width: 64px; /* Ajusta el tamaño del icono según sea necesario */
+    width: 64px;
     height: 64px;
-    margin-bottom: 5px; /* Espacio entre el icono y el texto */
+    margin-bottom: 5px;
+  }
+
+  .icono2 {
+    width: 55px;
+    height: 55px;
+    margin-bottom: 5px;
+    padding: 5px;
   }
   
 
@@ -107,4 +117,19 @@ body {
     text-decoration: none;
     color: #ffffff; /* Color del texto */
   }
-  
+
+.opciones.dos-columnas {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.contenido {
+  display: flex;
+  flex-direction: column; /* Los elementos se apilan verticalmente */
+  align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.btn-transparente {
+  background-color: rgba(0, 0, 0, 0); /* Color de fondo transparente */
+  color: #ffffff; /* Color del texto blanco */
+  border-color: rgba(0, 0, 0, 0.5); /* Color del borde con opacidad */
+}
