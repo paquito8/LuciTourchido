@@ -45,10 +45,13 @@
           echo '<img src="' . $ruta_imagen . '" class="img-fluid" style="max-width: 200px; margin: 0 auto;">';
           echo '<div class="card-body">';
           echo '<h5 class="card-title">' . $row["nombre"] . '</h5>';
-          echo '<p class="card-text">' . $row["descripcion"] . '</p>';
+          // Mostrar solo las primeras 10 palabras de la descripción
+          $descripcion = explode(' ', $row["descripcion"]);
+          $primeras_10_palabras = implode(' ', array_slice($descripcion, 0, 10));
+          echo '<p class="card-text">' . $primeras_10_palabras . '</p>';
           echo '</div>';
 
-            // Agregar el botón Ver Más
+          // Agregar el botón Ver Más
           echo '<div class="col-md-12 text-center">';
           ?>
           <a href="VerMasInformacion.php?id_lugar=<?php echo $row['id_lugar'] ?>" class="enlace btn btn-sm">Ver más</a>
@@ -66,5 +69,6 @@
     </div>
   </div>
 </main>
+
 
 <?php include("footer.php"); ?>
