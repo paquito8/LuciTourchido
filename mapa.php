@@ -1,5 +1,8 @@
 <?php include("header.php")?>
+
     <link rel="stylesheet" href="./css/mapa.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
     <h1 class="titulo">Ubica tu destino</h1>
     <form class="text-center">
         <label for="nombre">Ingrese el nombre de su destino:</label>

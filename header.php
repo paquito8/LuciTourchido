@@ -57,12 +57,12 @@
         </ul>
         <div class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <img src="user-icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            <img src="./img/Logo.png" width="40" height="40" class="d-inline-block align-top" alt="">
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
             <!-- Aquí puedes incluir los datos del usuario -->
-            <a class="dropdown-item" href="perfil.php">Perfil</a>
-            <a class="dropdown-item" href="#">Configuración</a>
+            <a class="dropdown-item" href="VerPerfil.php"><img src="./img/Logo.png" alt="" width="50px">Perfil</a>
+            <a class="dropdown-item" href="#"><img src="./img/herramientas.png" alt="" width="65px">Configuración</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="login.php">Cerrar sesión</a>
           </div>
