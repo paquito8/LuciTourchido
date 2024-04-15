@@ -1,4 +1,5 @@
 <?php include("header.php")?>
+
   <main>
     <div class="container">
       <div class="row">
@@ -24,11 +25,11 @@
         // Si hay resultados
         if ($result->num_rows > 0) {
           // Iterar sobre cada fila de resultados
-          while($row = $result->fetch_assoc()) {
+          while($row = $result->fetch_assoc()) { 
+
 
             $nombre_imagen = $row['imagen_lugar'];
             $ruta_imagen = "" . $nombre_imagen;
-
             echo '<div class="col-md-4">';
             echo '<div class="card">';
             // Mostrar la imagen
@@ -37,8 +38,18 @@
             echo '<h5 class="card-title">' . $row["nombre"] . '</h5>';
             echo '<p class="card-text">' . $row["descripcion"] . '</p>';
             echo '</div>';
+
+              // Agregar el botón Ver Más
+            echo '<div class="col-md-12 text-center">';
+            ?>
+            <a href="VerMasInformacion.php?id_lugar=<?php echo $row['id_lugar'] ?>">Ver más</a>
+            <?php
+            echo '</div>';
+
             echo '</div>';
             echo '</div>';
+
+
           }
         } else {
           echo "No se encontraron destinos.";
@@ -48,4 +59,6 @@
       </div>
     </div>
   </main>
-  <?php include("footer.php")?>
+
+
+  <?php include("footer.php"); ?>
