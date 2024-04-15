@@ -1,5 +1,15 @@
 <?php include("header.php")?>
-
+<style>
+        a.enlace {
+            padding: 10px;
+            background-color: rgb(58,50, 54);
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none; /* Para quitar el subrayado */
+        }
+  </style>
   <main>
     <div class="container">
       <div class="row">
