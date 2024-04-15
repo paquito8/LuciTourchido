@@ -51,4 +51,4 @@ function actualizarMapaConCoordenadas(latitud, longitud) {
 }
 
 // Llamar a la función para actualizar el mapa con una ubicación predefinida en Puebla
-actualizarMapa('Puebla, Puebla, Mexico');
+actualizarMapa('Tlaxcala, Tlaxcala, Mexico');

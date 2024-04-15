@@ -8,11 +8,13 @@ CREATE TABLE usuario (
     nombre VARCHAR(255) NOT NULL,
     Edad INT(2) NOT NULL,
     Correo VARCHAR(255) NOT NULL,
-    Contrasena Varchar(30) not null
+    Contrasena Varchar(30) not null,
+    idRole INT NOT NULL,
+    FOREIGN KEY (idRole) REFERENCES roles(idRole) ON UPDATE CASCADE ON DELETE CASCADE
 );
 
 
-insert into usuario values (null,'admin', 20, 'admin@gmail.com', 'admin');
+insert into usuario values (null,'admin', 20, 'admin@gmail.com', 'admin',1);
 
 CREATE TABLE lugar (
     id_lugar INT PRIMARY KEY AUTO_INCREMENT,
@@ -41,7 +43,7 @@ CREATE TABLE reservacion (
     tipo VARCHAR(255),
     fecha_Inicio DATE NOT NULL,
     id_lugar INT NOT NULL,
-    FOREIGN KEY (id_lugar) REFERENCES Lugar(id_lugar)
+    FOREIGN KEY (id_lugar) REFERENCES Lugar(id_lugar)  ON UPDATE CASCADE ON DELETE CASCADE
 );
 
 CREATE TABLE Actividad (
@@ -52,12 +54,12 @@ CREATE TABLE Actividad (
     Numero_Personas INT NOT NULL ,
     Edad_Recomendada INT NOT NULL ,
     Id_Lugar INT NOT NULL,
-    FOREIGN KEY (Id_Lugar) REFERENCES Lugar(Id_Lugar)
+    FOREIGN KEY (Id_Lugar) REFERENCES Lugar(Id_Lugar)  ON UPDATE CASCADE ON DELETE CASCADE
 );
 
 CREATE TABLE Categoria (
     Id_Categoria INT PRIMARY KEY AUTO_INCREMENT,
     Nombre VARCHAR(255) NOT NULL,
     Id_Lugar INT NOT NULL,
-    FOREIGN KEY (Id_Lugar) REFERENCES Lugar(Id_Lugar)
+    FOREIGN KEY (Id_Lugar) REFERENCES Lugar(Id_Lugar)  ON UPDATE CASCADE ON DELETE CASCADE
 );
