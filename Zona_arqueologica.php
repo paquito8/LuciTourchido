@@ -45,7 +45,10 @@
           echo '<img src="' . $ruta_imagen . '" class="img-fluid" style="max-width: 200px; margin: 0 auto;">';
           echo '<div class="card-body">';
           echo '<h5 class="card-title">' . $row["nombre"] . '</h5>';
-          echo '<p class="card-text">' . $row["descripcion"] . '</p>';
+          // Mostrar solo las primeras 10 palabras de la descripción
+          $descripcion = explode(' ', $row["descripcion"]);
+          $primeras_10_palabras = implode(' ', array_slice($descripcion, 0, 10));
+          echo '<p class="card-text">' . $primeras_10_palabras . '</p>';
           echo '</div>';
 
           // Agregar el botón Ver Más
