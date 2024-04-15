@@ -49,6 +49,9 @@
             <a class="nav-link" href="jardin.php">Jardín</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="reservacion.php">Reservar</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="favoritos.php">Favoritos</a>
           </li>
           <li class="nav-item">

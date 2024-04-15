@@ -133,3 +133,18 @@ body {
   color: #ffffff; /* Color del texto blanco */
   border-color: rgba(0, 0, 0, 0.5); /* Color del borde con opacidad */
 }
+
+
+
+
+
+
+
+
+.mensaje-exito {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: none; /* Ocultar el mensaje inicialmente */
+}

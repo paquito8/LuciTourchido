@@ -34,12 +34,6 @@ $servername = "localhost";
     }
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Perfil de Usuario</title>
-</head>
-<body>
     <div class="text-center">
         <img src="./img/Logo.png" class="rounded" alt="" width="250px">
     </div>
@@ -49,5 +43,5 @@ $servername = "localhost";
         <p><strong>Edad:</strong> <?php echo $edad; ?></p>
         <p><strong>Correo:</strong> <?php echo $correo ?></p>
     </div>
-</body>
-</html>
+
+<?php include("footer.php")?>

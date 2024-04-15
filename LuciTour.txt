@@ -35,44 +35,14 @@ hasta ahorita solo uso las tablas de arriba padre
 
 CREATE TABLE reservacion (
     Id_reservacion INT PRIMARY KEY AUTO_INCREMENT,
-    nombre VARCHAR(255) NOT NULL,
+    nombreCliente VARCHAR(255) NOT NULL,
     horario VARCHAR(255) NOT NULL,
     no_personas INT NOT NULL,
     costo VARCHAR(255) NOT NULL,
-    temporada VARCHAR(255),
-    tipo VARCHAR(255),
-    fecha_Inicio DATE NOT NULL,
+    fecha DATE NOT NULL,
     id_lugar INT NOT NULL,
     FOREIGN KEY (id_lugar) REFERENCES Lugar(id_lugar)  ON UPDATE CASCADE ON DELETE CASCADE
 );
-
-CREATE TABLE Actividad (
-    Id_Actividad INT PRIMARY KEY AUTO_INCREMENT,
-    Nombre_Actividad VARCHAR(255) NOT NULL ,
-    Costo INT NOT NULL ,
-    Horario VARCHAR(255) NOT NULL ,
-    Numero_Personas INT NOT NULL ,
-    Edad_Recomendada INT NOT NULL ,
-    Id_Lugar INT NOT NULL,
-    FOREIGN KEY (Id_Lugar) REFERENCES Lugar(Id_Lugar)  ON UPDATE CASCADE ON DELETE CASCADE
-);
-
-CREATE TABLE Categoria (
-    Id_Categoria INT PRIMARY KEY AUTO_INCREMENT,
-    Nombre VARCHAR(255) NOT NULL,
-    Id_Lugar INT NOT NULL,
-    FOREIGN KEY (Id_Lugar) REFERENCES Lugar(Id_Lugar)  ON UPDATE CASCADE ON DELETE CASCADE
-);
-
-
-
-
-
-
-
-
-
-
 
 
 

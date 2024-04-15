@@ -1,3 +1,11 @@
+<?php
+if(isset($_GET['reserva_exitosa']) && $_GET['reserva_exitosa'] == 1) {
+    echo "<div class='mensaje-exito'>¡Reserva realizada con éxito!</div>";
+}
+?>
+
+
+
 <?php include("header.php")?>
 
   <main>
@@ -66,7 +74,15 @@
           <span class="btn btn-transparente" >Favoritos</span>
         </a>
       </div>
-      <div class="opcion">
+        <div class="opcion">
+          <a href="reservacion.php">
+            <img src="./img/mapa.png" alt="Cerrar Sesión" class="icono2">
+          </a>
+          <a href="login.php">
+            <span class="btn btn-transparente" >Reservar</span>
+          </a>
+        </div>
+        <div class="opcion">
         <a href="./mapa.php">
           <img src="./img/mapaBueno.png" alt="Mapa" class="icono">
         </a>
