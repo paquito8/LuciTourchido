@@ -63,3 +63,31 @@ CREATE TABLE Categoria (
     Id_Lugar INT NOT NULL,
     FOREIGN KEY (Id_Lugar) REFERENCES Lugar(Id_Lugar)  ON UPDATE CASCADE ON DELETE CASCADE
 );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+REGISTROOOOOSSSSSSS-----------------------------
+
+
+INSERT INTO lugar (id_lugar, nombre, descripcion, direccion, horario, temporada, costo, categoria, imagen_lugar) VALUES
+(null, 'Cerro de la Cuatlapanga', 'También conocido como “El cerro del rostro”, ya que su formación geológica parece un rostro gritando. El cerro se eleva a unos 400 metros sobre el nivel del valle y es uno de los lugares preferidos de los amantes del montañismo, ya que hay pendientes con variadas dificultades para practicar diversas técnicas y estilos. La formación alcanza en su cúspide los 2,900 msnm.', '90663 Tlax.', '24 hrs del día', 'Ninguna', 'Gratis, 50 pesos de estacionamiento.', 'Bosque','./img/logo.png'),
+(null, 'Zona boscosa de Nanacamilpa', 'Mejor conocida como el Santuario de las Luciérnagas, ya que las 6 semanas que van de la última de junio a la primera de agosto, se pueden ver miles de luciérnagas brillando en este lugar que parece un bosque mágico, es una experiencia inolvidable. Sin embargo, la mejor temporada para visitarlo es durante el mes de julio. Es uno de los mejores lugares para la observación de este magnífico fenómeno natural.', 'C. Reforma 20, Francisco Villa, 90280 Cdad. de Nanacamilpa, Tlax.', '9:00 a.m. – 10:00 p.m.', '20 de junio – 10 de agosto', '$350', 'Bosque','./img/logo.png'),
+(null, 'Parque Nacional La Malinche', 'Abarca los estados de Puebla y Tlaxcala. Dentro del parque se localiza el volcán Matlalcuéyetl o Malintzi que es el más alto del estado con una altitud de 4 461 msnm. Fue declarado parque nacional el 21 de septiembre de 1938 y tiene una extensión de 46,112 hectáreas. La mayor parte de la superficie del parque esta cubierto de bosques de coníferas, a base de pino, encino, pastizales, abetos y oyameles. Ofrece un sinnúmero de parajes para acampar, ideales para el descanso y la recreación.', '90510 Huamantla, Tlax.', '7:00 a.m. - 11:00 p.m.', 'Ninguna', '$60', 'Bosque','./img/logo.png'),
+(null, 'Acopinalco del Peñón', 'Cañada con varias elevaciones y paredes rocosas en las que se pueden practicar deportes de montaña. Desde el mirador se pueden apreciar bellos paisajes montañosos como Las Vigas, la Peña y el Picacho del Águila, La Peña del Rosario y la imponente Malintzi.', '90255 Acopinalco del Peñón, Tlax.', 'Sin horario', 'Ninguna', 'Gratis', 'Bosque','./img/logo.png'),
+(null, 'Las Vigas', 'Este es un bello paraje que se ubica en Tlaxco y está rodeado de un paisaje boscoso dentro del que se destaca una enorme piedra que es conocida como “La Muñeca”, donde se pueden practicar diversas actividades.', 'Emilio Sánchez Piedras, Las vigas, Tlaxcala', '2pm a 8pm', 'Ninguno', 'Ninguno', 'Bosque','./img/logo.png'),
+(null, 'Llanos de Teopan', 'Es una de las zonas boscosas más bellas del estado que se conforma de ocotes, pinos y encinos llenos de bromelias. Es común que por la tarde la niebla baje hasta cubrir los árboles formando un hermoso paisaje. En sus alrededores hay pequeñas cabañas y algunas cascadas que permiten que puedas gozar de la naturaleza. Es una opción ideal para los que quieren hacer un día de campo o bien acampar y convivir con todos estos increíbles paisajes.', '972 Blvd. 5 de Mayo, Tlaxco, Tlaxcala', 'Ninguno', 'Ninguna', 'Ninguno', 'Bosque','./img/logo.png'),
+(null, 'Laguna de Acuitlapilco', 'La Laguna de Acuitlapilco es un cuerpo de agua ubicado en el municipio de Tlaxcala, Tlaxcala. Esta laguna es conocida por ser un importante sitio para la observación de aves, ya que alberga una gran variedad de especies acuáticas y migratorias. Además de su valor ecológico, la laguna es un lugar ideal para realizar actividades al aire libre, como caminatas, paseos en bicicleta y picnics.', 'Laguna 9, 90110 Santa María Acuitlapilco, Tlaxcala · ~5.7 km', 'todo el año', 'Todo el año.', 'gratis', 'Lago','./img/logo.png'),
+(null, 'Zona Arqueológica de Tizatlán', 'La Zona Arqueológica de Tizatlán es un sitio histórico y culturalmente importante en Tlaxcala. Fue la capital del señorío de Tizatlán, uno de los aliados más importantes de los españoles durante la conquista de México. El sitio cuenta con estructuras prehispánicas como pirámides, palacios y patios, así como un museo que exhibe artefactos y objetos encontrados en la zona.', 'Calz. Xicohtencatl 45, 90100 San Esteban Tizatlán, Tlaxcala · ~10.2 km', 'martes a domingo de 9:00 a 17:00 hrs.', 'Todo el año.', '$75 pesos', 'arqueologica','./img/logo.png'),
+(null, 'Cacaxtla', 'Excursión de un día al sitio arqueológico de Cacaxtla y Tlaxcala desde Puebla', 'Calle Cto. Perimetral Pte. S/N, 90720 San Miguel del Milagro, Tlax.', '9:00 - 17:00 hrs', 'Todo el año', '$95.00', 'arqueologica','./img/logo.png'),
+(null, 'Sitio arqueológico de Cacaxtla y Tlaxcala', 'Excursión de un día al sitio arqueológico de Cacaxtla y Tlaxcala desde Puebla', 'Calle Cto. Perimetral Pte. S/N, 90720 San Miguel del Milagro, Tlax.', '9:00 - 17:00','todo el año', '$50' , 'Arqueologica' ,'./img/logo.png');
