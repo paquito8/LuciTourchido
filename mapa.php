@@ -2,12 +2,22 @@
 
     <link rel="stylesheet" href="./css/mapa.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-
+    <style>
+        button.boton {
+            padding: 10px;
+            background-color: #ffffff;
+            color: rgb(58,50, 54);
+            border: 1px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none; /* Para quitar el subrayado */
+        }
+  </style>
     <h1 class="titulo">Ubica tu destino</h1>
     <form class="text-center">
         <label for="nombre">Ingrese el nombre de su destino:</label>
         <input type="text" id="nombre" placeholder="Las Vigas Tlaxcala" required>
-        <button type="button" onclick="actualizarMapa()">Actualizar Mapa</button>
+        <button type="button" onclick="actualizarMapa()" class="boton"><img src="./img/buscar.png" alt="" width="50px">Buscar destino</button>
     </form>
     <div id="mapa"></div>
 

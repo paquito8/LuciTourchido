@@ -36,9 +36,20 @@ if (isset($_GET['id_lugar']) && is_numeric($_GET['id_lugar'])) {
         $categoria = $fila["categoria"];
         $imagen_lugar = $fila["imagen_lugar"];
 ?>
+    <style>
+        a.enlace {
+            padding: 10px;
+            background-color: rgb(58,50, 54);
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none; /* Para quitar el subrayado */
+        }
+  </style>
         <!-- Muestra la información detallada del lugar -->
-        <div class="container">
-            <h1 class="mt-5"><?php echo $nombre; ?></h1>
+        <div class="container p-3">
+            <h1 class="mt-3 text-center"><?php echo $nombre; ?></h1>
             <div class="card">
                 <img src="<?php echo $imagen_lugar; ?>" class="card-img-top" alt="<?php echo $nombre; ?>">
                 <div class="card-body">
@@ -50,6 +61,10 @@ if (isset($_GET['id_lugar']) && is_numeric($_GET['id_lugar'])) {
                     <p class="card-text"><strong>Costo:</strong> <?php echo $costo; ?></p>
                     <p class="card-text"><strong>Categoría:</strong> <?php echo $categoria; ?></p>
                 </div>
+                <div class="text-center">
+                    <a href="./mapa-php" class="enlace"><img src="./img/mapaBueno.png" alt="" width="30px"> Ir al mapa</a>
+                </div>
+                <br>
             </div>
         </div>
 <?php

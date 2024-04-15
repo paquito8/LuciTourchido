@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f8f8; /* Color de fondo verde agua */
+    color: rgb(58,50, 54);
   }
   
   header {
@@ -37,6 +38,7 @@ body {
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    color: rgb(58,50, 54);
   }
   
   button {
@@ -60,6 +62,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f8f8; /* Color de fondo verde agua */
+    color: rgb(58,50, 54);
   }
   
   header {
