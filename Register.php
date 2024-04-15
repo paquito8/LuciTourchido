@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <title>Inicio de sesión</title>
+<?php include("header.php")?>
+
   <style>
     /* Estilos CSS adicionales para la imagen */
     header img {
@@ -13,11 +8,6 @@
       vertical-align: middle; /* Centra verticalmente la imagen */
     }
   </style>
-</head>
-<body>
-  <header>
-    <h1><img src="./img/logo.png" alt="Logo"> LuciTour</h1>
-  </header>
   <main>
     <form action="menu.php" method="post">
         <label for="nombre">Nombre</label>
@@ -36,6 +26,6 @@
         <button type="submit">Registrar</button>
     </form>
   </main>
-</body>
-</html>
+
+<?php include("footer.php")?>
     

@@ -28,7 +28,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="menu.php">Menú Principal</a>
+            <a class="nav-link" href="index.php">Menú Principal</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="bosque.php">Bosque</a>
@@ -46,7 +46,7 @@
             <a class="nav-link" href="desierto.php">Desierto</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="cascada.php">Cascada</a>
+            <a class="nav-link" href="cascadas.php">Cascada</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="jardin.php">Jardín</a>
@@ -56,6 +56,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="mapa.php">Mapa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.php">Cerrar Sesión</a>
           </li>
         </ul>
         <div class="nav-item dropdown">

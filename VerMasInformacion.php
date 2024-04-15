@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <title>Bosque</title>
-</head>
-<body>
-  <header>
-    <h1>Bosque</h1>
-  </header>
+<?php include("header.php")?>
   <main>
     <div class="container">
       <div class="row">
@@ -63,5 +52,5 @@
       </div>
     </div>
   </main>
-</body>
-</html>
+
+<?php include("footer.php")?>
