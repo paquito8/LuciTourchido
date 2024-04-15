@@ -1,7 +1,4 @@
 <?php include("header.php")?>
-  <header>
-    <h1>Bosque</h1>
-  </header>
   <main>
     <div class="container">
       <div class="row">
