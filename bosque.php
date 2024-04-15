@@ -43,7 +43,7 @@
             echo '<div class="col-md-4">';
             echo '<div class="card">';
             // Mostrar la imagen
-            echo '<img src="' . $ruta_imagen . '" class="img-fluid imagen-pequena">';
+            echo '<img src="' . $ruta_imagen . '" class="img-fluid" style="max-width: 200px; margin: 0 auto;">';
             echo '<div class="card-body">';
             echo '<h5 class="card-title">' . $row["nombre"] . '</h5>';
             echo '<p class="card-text">' . $row["descripcion"] . '</p>';

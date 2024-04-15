@@ -26,7 +26,7 @@ CREATE TABLE lugar (
     imagen_lugar varchar(100) not null
 );
 
-VALUES ('Lugar de ejemplo', 'Esta es una descripción de ejemplo', 'Dirección de ejemplo', 'Horario de ejemplo', 'Temporada de ejemplo', 10, 'Arqueologica','zona_arqueologica.png');
+INSERT INTO lugar VALUES (null, 'Lugar de ejemplo', 'Esta es una descripción de ejemplo', 'Dirección de ejemplo', 'Horario de ejemplo', 'Temporada de ejemplo', 10, 'Arqueologica','zona_arqueologica.png');
 
 hasta ahorita solo uso las tablas de arriba padre
 
