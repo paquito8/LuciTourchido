@@ -61,7 +61,7 @@
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
             <!-- Aquí puedes incluir los datos del usuario -->
-            <a class="dropdown-item" href="#">Perfil</a>
+            <a class="dropdown-item" href="perfil.php">Perfil</a>
             <a class="dropdown-item" href="#">Configuración</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="login.php">Cerrar sesión</a>
