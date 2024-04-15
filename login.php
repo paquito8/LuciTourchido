@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <title>Inicio de sesión</title>
   <style>
     /* Estilos CSS adicionales para la imagen */
@@ -11,6 +12,17 @@
       max-width: 100px; /* Ajusta el ancho máximo de la imagen */
       height: auto; /* Permite que la altura se ajuste automáticamente */
       vertical-align: middle; /* Centra verticalmente la imagen */
+    }
+  </style>
+  <style>
+    a.enlace {
+      padding: 10px;
+      background-color: #2ecc71;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none; /* Para quitar el subrayado */
     }
   </style>
 </head>
@@ -25,6 +37,8 @@
       <label for="contrasena">Contraseña:</label>
       <input type="password" id="contrasena" name="contrasena" required>
       <button type="submit">Ingresar</button>
+      <br>
+      <a href="./Register.php" class="enlace text-center">Registrarse</a>
     </form>
     <?php
     // Verificar si hay un error de inicio de sesión

@@ -35,17 +35,18 @@ function obtenerCoordenadas(nombre) {
         });
 }
 
-// Función para actualizar el mapa con nuevas coordenadas
+var marker; // Variable global para almacenar el marcador
+
 function actualizarMapaConCoordenadas(latitud, longitud) {
+    console.log("Nuevas coordenadas recibidas:", latitud, longitud); // Rastrear la llamada a la función
+
     map.setView([latitud, longitud], 12); // Zoom a nivel 12 (ajústalo según necesites)
 
-    // Eliminar marcadores anteriores, si los hay
-    map.eachLayer(function(layer) {
-        if (layer instanceof L.Marker) {
-            map.removeLayer(layer);
-        }
-    });
+    // Eliminar marcador existente, si lo hay
+    if (marker) {
+        map.removeLayer(marker);
+    }
 
-    // Añadir marcador en la nueva ubicación
-    L.marker([latitud, longitud]).addTo(map);
+    // Añadir el nuevo marcador
+    marker = L.marker([latitud, longitud]).addTo(map);
 }

@@ -20,12 +20,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $contrasena = $_POST["contrasena"];
 
     // Consulta SQL para verificar las credenciales en la base de datos
-    $sql = "SELECT * FROM usuario WHERE correo = '$correo' AND contrasena = '$contrasena'";
+    $sql = "SELECT * FROM usuario WHERE Correo = '$correo' AND contrasena = '$contrasena'";
     $result = $conn->query($sql);
 
     // Si se encuentra una coincidencia
     if ($result->num_rows > 0) {
         // Inicio de sesión exitoso, redireccionar a la página de inicio
+        session_start(); // Iniciar sesión
+        $row = $result->fetch_assoc();
+        $_SESSION['nombre'] = $row['nombre'];
+        $_SESSION['edad'] = $row['Edad'];
+        $_SESSION['correo'] = $row['Correo'];
+        $_SESSION['rol'] = $row['idRole'];
         header("Location: index.php");
         exit(); // Importante: asegúrate de salir del script después de redireccionar
     } else {
