@@ -63,6 +63,7 @@ if (isset($_GET['id_lugar']) && is_numeric($_GET['id_lugar'])) {
                 </div>
                 <div class="text-center">
                     <a href="./mapa-php" class="enlace"><img src="./img/mapaBueno.png" alt="" width="30px"> Ir al mapa</a>
+                    <a href="./reservacion.php" class="enlace btn btn-sm"><img src="./img/mapa.png" alt="" width="40px">Nuvo viaje</a>
                 </div>
                 <br>
             </div>
