@@ -55,7 +55,7 @@
           <a href="VerMasInformacion.php?id_lugar=<?php echo $row['id_lugar'] ?>" class="enlace btn btn-sm">Ver más</a>
           <?php
           echo '</div>';
-
+          echo '<div class="col-md-12 text-center">';
           echo '</div>';
           echo '</div>';
           echo '<br>';

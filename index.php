@@ -66,14 +66,6 @@ if(isset($_GET['reserva_exitosa']) && $_GET['reserva_exitosa'] == 1) {
           <span class="btn btn-transparente" >Jardín</span>
         </a>
       </div>
-      <div class="opcion">
-        <a href="./Favoritos.php">
-          <img src="./img/favoritos.png" alt="Favoritos" class="icono">
-        </a>
-        <a href="./Favoritos.php">
-          <span class="btn btn-transparente" >Favoritos</span>
-        </a>
-      </div>
         <div class="opcion">
           <a href="reservacion.php">
             <img src="./img/mapa.png" alt="Cerrar Sesión" class="icono2">
