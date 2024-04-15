@@ -14,74 +14,74 @@
   <main>
     <div class="opciones dos-columnas">
       <div class="opcion">
-        <a href="./Vistas/bosque.php">
+        <a href="./bosque.php">
           <img src="./img/bosque.png" alt="Bosque" class="icono">
         </a>
-        <a href="./Vistas/bosque.php">
+        <a href="./bosque.php">
           <span class="btn btn-transparente">Bosque</span>
         </a>
       </div>
       <div class="opcion">
-        <a href="./Vistas/Lago.php">
+        <a href="./Lago.php">
           <img src="./img/lago.png" alt="Lago" class="icono">
         </a>
-        <a href="./Vistas/Lago.php">
+        <a href="./Lago.php">
           <span class="btn btn-transparente" >Lago</span>
         </a>
       </div>
       <div class="opcion">
-        <a href="./Vistas/Zona_arqueologica.php">
+        <a href="./Zona_arqueologica.php">
           <img src="./img/zona_arqueologica.png" alt="Zona Arqueológica" class="icono">
         </a>
-        <a href="./Vistas/Zona_arqueologica.php">
+        <a href="./Zona_arqueologica.php">
           <span class="btn btn-transparente" >Arqueológica</span>
         </a>
       </div>
       <div class="opcion">
-        <a href="./Vistas/Museo.php">
+        <a href="./Museo.php">
           <img src="./img/museo.png" alt="Museo" class="icono">
         </a>
-        <a href="./Vistas/Museo.php">
+        <a href="./Museo.php">
           <span class="btn btn-transparente" >Museo</span>
         </a>
       </div>
       <div class="opcion">
-        <a href="./Vistas/Desierto.php">
+        <a href="./Desierto.php">
           <img src="./img/desierto.png" alt="Desierto" class="icono">
         </a>
-        <a href="./Vistas/Desierto.php">
+        <a href="./Desierto.php">
           <span class="btn btn-transparente" >Desierto</span>
         </a>
       </div>
       <div class="opcion">
-        <a href="./Vistas/cascadas.php">
+        <a href="./cascadas.php">
           <img src="./img/cascada.png" alt="Cascada" class="icono">
         </a>
-        <a href="./Vistas/cascadas.php">
+        <a href="./cascadas.php">
           <span class="btn btn-transparente" >Cascada</span>
         </a>
       </div>
       <div class="opcion">
-        <a href="./Vistas/Jardin.php">
+        <a href="./Jardin.php">
           <img src="./img/jardin.png" alt="Jardín" class="icono">
         </a>
-        <a href="./Vistas/Jardin.php">
+        <a href="./Jardin.php">
           <span class="btn btn-transparente" >Jardín</span>
         </a>
       </div>
       <div class="opcion">
-        <a href="./Vistas/Favoritos.php">
+        <a href="./Favoritos.php">
           <img src="./img/favoritos.png" alt="Favoritos" class="icono">
         </a>
-        <a href="./Vistas/Favoritos.php">
+        <a href="./Favoritos.php">
           <span class="btn btn-transparente" >Favoritos</span>
         </a>
       </div>
       <div class="opcion">
-        <a href="./Vistas/mapa.php">
+        <a href="./mapa.php">
           <img src="./img/mapaBueno.png" alt="Mapa" class="icono">
         </a>
-        <a href="./Vistas/mapa.php">
+        <a href="./mapa.php">
           <span class="btn btn-transparente" >Mapa</span>
         </a>
       </div>
