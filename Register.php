@@ -20,10 +20,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $edad = mysqli_real_escape_string($conn, $_POST['edad']);
   $correo = mysqli_real_escape_string($conn, $_POST['correo']);
   $contrasena = mysqli_real_escape_string($conn, $_POST['contrasena']);
-  $rol = mysqli_real_escape_string($conn, $_POST['idRole']);
 
   // Insertar datos en la base de datos
-  $sql = "INSERT INTO usuario (nombre, Edad, Correo, Contrasena, idRole) VALUES ('$nombre', '$edad', '$correo', '$contrasena', '$rol')";
+  $sql = "INSERT INTO usuario (nombre, Edad, Correo, Contrasena) VALUES ('$nombre', '$edad', '$correo', '$contrasena')";
 
   if ($conn->query($sql) === TRUE) {
       echo "Registro exitoso";
@@ -74,10 +73,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="text" id="correo" name="correo" required>
         <label for="contrasena">Contraseña:</label>
         <input type="password" id="contrasena" name="contrasena" required>
-        <label for="rol">Role</label>
-        <select name="idRole" id="idRole" require>
-            <option value="2">Viajero</option>
-        </select>
+
         <br>
         <button type="submit" class="button">Registrar</button>
         <br>
