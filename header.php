@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-2Q7Uo1Jy3GyW2cDqOLdsLR9xQXx5jqm7yZVo2gO3MDgZJz4eVpIv0nsDvYKdSZFddQQ9ejV0Y2LHcUG7sQUb6Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
   <title>LuciTour</title>
   <style>
     /* Estilo personalizado para el menú desplegable */
@@ -28,26 +30,8 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="bosque.php">Bosque</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="lago.php">Lago</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="zona_arqueologica.php">Zona Arqueológica</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="museo.php">Museo</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="desierto.php">Desierto</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="cascadas.php">Cascada</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="jardin.php">Jardín</a>
+        <li class="nav-item">
+            <a class="nav-link" href="lugares.php">Lugares</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="reservacion.php">Reservar</a>
